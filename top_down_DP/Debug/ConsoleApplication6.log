@@ -1,0 +1,11 @@
+﻿生成启动时间为 2017/1/4 14:34:58。
+     1>项目“c:\Users\administrator\documents\visual studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VS2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleApplication6.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ConsoleApplication6.cpp
+         ConsoleApplication6.cpp
+     1>c:\users\administrator\documents\visual studio 2012\projects\consoleapplication6\consoleapplication6\consoleapplication6.cpp(20): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+     1>已完成生成项目“c:\Users\administrator\documents\visual studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.24
