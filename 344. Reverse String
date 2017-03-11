@@ -1,0 +1,21 @@
+public class Solution {
+    public String reverseString(String s) {
+    	Stack<Character> stack = new Stack<Character>() ;
+        for(int i=0;i<s.length();i++)
+        {
+        	stack.push(s.charAt(i));
+        	
+        }
+        String str = new String();
+        char []a = new char[s.length()];
+        for(int i=0;i<s.length();i++)
+        {
+        	a[i] = stack.pop();
+        }
+        str = String.valueOf(a);
+     
+        return str;
+        
+        
+    }
+}
