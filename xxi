@@ -1,0 +1,50 @@
+package MyCode;
+
+public class Solution {
+	
+	 public int hammingDistance(int x, int y) {
+		int []a = new int[32];
+		int []b = new int[32];
+		int i=0;
+		int j = 0;
+		
+		 while( x>=2 )
+		 {
+			 a[i]= x%2;
+			 x = x/2;
+			 i++;
+		 }
+		 while( y>=2 )
+		 {
+			 b[j] = y%2;
+			 y = y/2;
+			 j++;
+		 }
+		 if(x==1)
+		 {
+			 a[i]=1;
+		 }
+		 else
+		 {
+			 a[i]=0;
+		 }
+		 if(y==1)
+		 {
+			 b[j]=1;
+		 }
+		 else
+		 {
+			 a[j]=0;
+		 }
+		 int sum = 0;
+		 for(int k=0;k<32;k++)
+			{
+				sum+=Math.abs(a[k]-b[k]);
+			}
+		 return sum;
+		 }
+	
+	 
+	    }
+
+
