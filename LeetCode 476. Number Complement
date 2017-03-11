@@ -1,0 +1,14 @@
+package MyCode;
+
+public class Solution {
+    public int findComplement(int num) {
+        
+    	 int a = (int) (Math.log(num)/Math.log(2))+1;
+    	 int b = (2<<a-1) -1;
+    	 int c = num ^ b;
+
+    	 return c;
+    	
+    }
+}
+// 使用异或运算符进行求解
