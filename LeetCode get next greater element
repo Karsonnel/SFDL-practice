@@ -1,0 +1,43 @@
+package MyCode;
+
+import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Stack;
+
+public class Solution {
+    public int[] nextGreaterElement(int[] findNums, int[] nums) {
+        Stack<Integer> st1 = new Stack<Integer>();
+        int b[] = new int[findNums.length];
+        Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+        int a = nums.length;
+        if(a==0)
+        {
+        	return b;
+        }
+        st1.push(nums[0]);
+        for(int i=1;i<a;i++)
+        {
+        	while(!st1.empty()&&st1.peek()<nums[i])
+        	{
+        		map.put(st1.pop(), nums[i]);
+        		
+        	}
+        	st1.push(nums[i]);
+        	
+        }
+        while(!st1.empty())
+        {
+        	map.put(st1.pop(),-1);
+        }
+        for(int i=0;i<findNums.length;i++)
+        {
+        	b[i]=map.get(findNums[i]);
+        //	System.out.print(b[i]);
+        }
+        return b;
+        
+    }
+}
